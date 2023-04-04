@@ -1,8 +1,9 @@
 name: Deploy to Github Pages
+
 on:
   push:
     branches:
-      - "main" # change to the branch you wish to deploy from
+      - "master" # change to the branch you wish to deploy from
 
 permissions:
   contents: read
@@ -18,5 +19,3 @@ jobs:
     steps:
     - id: build-publish
       uses: bitovi/github-actions-react-to-ghp@v1.2.0
-      with:
-        path: build # change to your build folder
