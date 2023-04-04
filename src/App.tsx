@@ -4,7 +4,7 @@ import Calendar from '@/components/Calendar/Calendar';
 
 function App() {
   const [count, setCount] = useState(0)
-  const date = new Date('May 17, 2023 03:24:00');
+  const date = new Date();
 
   return (
     <Calendar date={date}></Calendar>
